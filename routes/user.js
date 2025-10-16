@@ -71,7 +71,7 @@ router.get("/:id", async (req, res) => {
 
 
 // PUT /users/:id — Update a user (Admin only)
-router.put("/:id", isValidUser, isAdmin,  async (req, res) => {
+router.put("/:id", isValidUser,  async (req, res) => {
   try {
     const id = req.params.id; // user ID from URL
     const name = req.body.name;
